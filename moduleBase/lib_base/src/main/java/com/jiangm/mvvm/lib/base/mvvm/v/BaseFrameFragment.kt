@@ -1,4 +1,4 @@
-package com.quyunshuo.androidbaseframemvvm.base.mvvm.v
+package com.jiangm.mvvm.lib.base.mvvm.v
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,16 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.alibaba.android.arouter.launcher.ARouter
-import com.quyunshuo.androidbaseframemvvm.base.mvvm.vm.BaseViewModel
-import com.quyunshuo.androidbaseframemvvm.base.utils.BindingReflex
-import com.quyunshuo.androidbaseframemvvm.base.utils.EventBusRegister
-import com.quyunshuo.androidbaseframemvvm.base.utils.EventBusUtils
+import com.jiangm.mvvm.lib.base.mvvm.vm.BaseViewModel
+import com.jiangm.mvvm.lib.base.utils.BindingReflex
+import com.jiangm.mvvm.lib.base.utils.EventBusRegister
+import com.jiangm.mvvm.lib.base.utils.EventBusUtils
+
 
 /**
  * Fragment基类
- *
- * @author Qu Yunshuo
- * @since 8/27/20
  */
 abstract class BaseFrameFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(),
     FrameView<VB> {

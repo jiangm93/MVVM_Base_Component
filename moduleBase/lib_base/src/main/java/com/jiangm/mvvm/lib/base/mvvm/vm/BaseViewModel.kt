@@ -1,8 +1,8 @@
-package com.quyunshuo.androidbaseframemvvm.base.mvvm.vm
+package com.jiangm.mvvm.lib.base.mvvm.vm
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.quyunshuo.androidbaseframemvvm.base.utils.StateLayoutEnum
+import com.jiangm.mvvm.lib.base.utils.StateLayoutEnum
 import kotlin.jvm.Throws
 
 /**

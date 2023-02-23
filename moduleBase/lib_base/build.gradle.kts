@@ -7,7 +7,7 @@ plugins {
     id("com.jiangm.plugin.version")
     id("com.google.dagger.hilt.android")
 }
-
+apply(from = "../../base_lib.gradle.kts")
 
 android {
     namespace = "com.jiangm.mvvm.lib.base"

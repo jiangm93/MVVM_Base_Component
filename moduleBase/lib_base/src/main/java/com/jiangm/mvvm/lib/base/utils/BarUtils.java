@@ -27,7 +27,8 @@ import java.lang.reflect.Method;
 
 import static android.Manifest.permission.EXPAND_STATUS_BAR;
 
-import com.quyunshuo.androidbaseframemvvm.base.BaseApplication;
+import com.jiangm.mvvm.lib.base.BaseApplication;
+
 
 /**
  * 各种栏的工具类

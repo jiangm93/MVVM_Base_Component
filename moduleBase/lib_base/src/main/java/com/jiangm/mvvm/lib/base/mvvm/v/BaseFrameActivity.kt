@@ -6,6 +6,7 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 import com.alibaba.android.arouter.launcher.ARouter
+import com.jiangm.mvvm.lib.base.mvvm.vm.BaseViewModel
 import com.jiangm.mvvm.lib.base.utils.BindingReflex
 import com.jiangm.mvvm.lib.base.utils.EventBusRegister
 import com.jiangm.mvvm.lib.base.utils.EventBusUtils
@@ -13,8 +14,6 @@ import com.jiangm.mvvm.lib.base.utils.network.AutoRegisterNetListener
 import com.jiangm.mvvm.lib.base.utils.network.NetworkStateChangeListener
 import com.jiangm.mvvm.lib.base.utils.network.NetworkTypeEnum
 import com.jiangm.mvvm.lib.base.utils.toast
-import com.quyunshuo.androidbaseframemvvm.base.mvvm.v.FrameView
-import com.quyunshuo.androidbaseframemvvm.base.mvvm.vm.BaseViewModel
 import me.jessyan.autosize.AutoSizeCompat
 
 /**

@@ -23,6 +23,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/moduleBase" />
+            <option value="$PROJECT_DIR$/moduleBase/lib_base" />
+            <option value="$PROJECT_DIR$/moduleBase/lib_common" />
             <option value="$PROJECT_DIR$/plugin_version" />
           </set>
         </option>

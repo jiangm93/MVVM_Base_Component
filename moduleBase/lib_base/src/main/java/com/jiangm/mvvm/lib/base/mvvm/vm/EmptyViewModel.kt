@@ -1,5 +1,4 @@
-package com.quyunshuo.androidbaseframemvvm.base.mvvm.vm
-
+package com.jiangm.mvvm.lib.base.mvvm.vm
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

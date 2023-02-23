@@ -1,3 +1,5 @@
+import kotlin.concurrent.timerTask
+
 pluginManagement {
     repositories {
         google()
@@ -25,3 +27,4 @@ rootProject.name = "MVVM_Base_Component"
 include(":app")
 includeBuild("plugin_version")
 include(":moduleBase:lib_base")
+include(":moduleBase:lib_common")

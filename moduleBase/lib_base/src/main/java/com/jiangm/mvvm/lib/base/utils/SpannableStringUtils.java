@@ -61,7 +61,8 @@ import java.lang.ref.WeakReference;
 
 import static android.graphics.BlurMaskFilter.Blur;
 
-import com.quyunshuo.androidbaseframemvvm.base.BaseApplication;
+import com.jiangm.mvvm.lib.base.BaseApplication;
+
 
 /**
  * 字符串相关

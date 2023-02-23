@@ -1,4 +1,4 @@
-package com.quyunshuo.androidbaseframemvvm.base.mvvm.v
+package com.jiangm.mvvm.lib.base.mvvm.v
 
 import android.os.Bundle
 import android.view.View
