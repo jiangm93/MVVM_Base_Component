@@ -38,11 +38,12 @@ android {
 
 dependencies {
 
-    implementation (Libs.coreKtx)
-    implementation (Libs.appcompat)
-    implementation (Libs.material)
-    implementation (Libs.constraintlayout)
-    testImplementation (Libs.junit)
-    androidTestImplementation (Libs.testExt)
-    androidTestImplementation (Libs.testEspresso)
+    implementation (DependencyConfig.AndroidX.CoreKtx)
+    implementation (DependencyConfig.AndroidX.AppCompat)
+    implementation (DependencyConfig.Android.Material)
+    implementation (DependencyConfig.AndroidX.ConstraintLayout)
+    testImplementation (DependencyConfig.Android.Junit)
+    androidTestImplementation (DependencyConfig.AndroidX.TestExtJunit)
+    androidTestImplementation (DependencyConfig.AndroidX.TestEspresso)
+
 }
