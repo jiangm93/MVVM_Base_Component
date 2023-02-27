@@ -14,7 +14,7 @@ import kotlinx.coroutines.MainScope
  *@desc: 描述
  *
  */
-class BaseApplication : MultiDexApplication() {
+open class BaseApplication : MultiDexApplication() {
 
     private val mCoroutineScope by lazy(mode = LazyThreadSafetyMode.NONE) { MainScope() }
 

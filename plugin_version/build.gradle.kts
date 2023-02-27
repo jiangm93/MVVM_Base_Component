@@ -25,6 +25,7 @@ gradlePlugin {
         create("version") {
             //添加插件
             id = "com.jiangm.plugin.version"
+            version = "1.0.0"
             //在根目录创建类 VersionPlugin 继承 Plugin<Project>
             implementationClass = "com.jiangm.plugin.version.VersionPlugin"
         }

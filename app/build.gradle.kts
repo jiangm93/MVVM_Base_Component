@@ -1,14 +1,16 @@
 import com.jiangm.plugin.version.*
+
 plugins {
-    id ("com.android.application")
-    id ("org.jetbrains.kotlin.android")
-    id ("com.jiangm.plugin.version")
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
     namespace = AndroidConfig.namespace
     compileSdk = AndroidConfig.compileSdk
-    buildToolsVersion =AndroidConfig.buildToolsVersion
+    buildToolsVersion = AndroidConfig.buildToolsVersion
 
     defaultConfig {
         applicationId = AndroidConfig.applicationId
@@ -21,9 +23,12 @@ android {
     }
 
     buildTypes {
-       getByName("release"){
-            isMinifyEnabled=false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        getByName("release") {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -37,13 +42,25 @@ android {
 }
 
 dependencies {
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
-    implementation (DependencyConfig.AndroidX.CoreKtx)
-    implementation (DependencyConfig.AndroidX.AppCompat)
-    implementation (DependencyConfig.Android.Material)
-    implementation (DependencyConfig.AndroidX.ConstraintLayout)
-    testImplementation (DependencyConfig.Android.Junit)
-    androidTestImplementation (DependencyConfig.AndroidX.TestExtJunit)
-    androidTestImplementation (DependencyConfig.AndroidX.TestEspresso)
+    if (!AndroidConfig.isAppMode) {
+        // 有业务组件时 把这个去掉 这里只是为了使用base里的依赖库
+        implementation(project(":moduleCore:main"))
+    } else {
+        implementation(project(":moduleBase:lib_common"))
+    }
+    implementation(DependencyConfig.JetPack.HiltCore)
+
+    kapt(DependencyConfig.GitHub.AutoServiceAnnotations)
+    kapt(DependencyConfig.JetPack.HiltApt)
+
+//    implementation (DependencyConfig.AndroidX.CoreKtx)
+//    implementation (DependencyConfig.AndroidX.AppCompat)
+//    implementation (DependencyConfig.Android.Material)
+//    implementation (DependencyConfig.AndroidX.ConstraintLayout)
+//    testImplementation (DependencyConfig.Android.Junit)
+//    androidTestImplementation (DependencyConfig.AndroidX.TestExtJunit)
+//    androidTestImplementation (DependencyConfig.AndroidX.TestEspresso)
 
 }

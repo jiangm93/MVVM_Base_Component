@@ -11,7 +11,7 @@ object AndroidConfig {
     const val applicationId = "com.jiangm.mbc"
     const val compileSdk = 33
     const val buildToolsVersion = "30.0.3"
-    const val minSdk = 24
+    const val minSdk = 28
     const val targetSdk = 30
     const val versionCode = 1000000
     const val versionName = "1.0.0.0"

@@ -4,7 +4,7 @@ plugins {
     kotlin("kapt")
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("com.jiangm.plugin.version")
+//    id("com.jiangm.plugin.version")
     id("com.google.dagger.hilt.android")
 }
 

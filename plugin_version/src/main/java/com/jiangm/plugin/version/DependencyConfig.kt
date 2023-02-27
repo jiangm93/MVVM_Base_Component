@@ -47,7 +47,7 @@ object DependencyConfig {
         const val ARoute = "1.5.2"                          // 阿里路由
         const val ARouteCompiler = "1.5.2"                  // 阿里路由 APT
         const val RecyclerViewAdapter = "3.0.4"             // RecyclerViewAdapter
-        const val EventBus = "3.2.0"                        // 事件总线
+        const val EventBus = "3.3.1"                        // 事件总线
         const val PermissionX = "1.4.0"                     // 权限申请
         const val LeakCanary = "2.7"                        // 检测内存泄漏
         const val AutoService = "1.0"                       // 自动生成SPI暴露服务文件

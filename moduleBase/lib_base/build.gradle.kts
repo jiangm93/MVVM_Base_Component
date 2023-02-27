@@ -1,13 +1,13 @@
 import com.jiangm.plugin.version.*
-
 plugins {
-    kotlin("kapt")
+//    kotlin("kapt")
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("com.jiangm.plugin.version")
+//    id("com.jiangm.plugin.version")
     id("com.google.dagger.hilt.android")
+    id("kotlin-android")
+    id("kotlin-kapt")
 }
-apply(from = "../../base_lib.gradle.kts")
 
 android {
     namespace = "com.jiangm.mvvm.lib.base"
